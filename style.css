@@ -18,13 +18,15 @@ body {
 
     width: 90%;
     max-width: 900px;
+    height: 100%;    
     margin: 5em auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     background: hsl(244, 38%, 16%);
     border-radius: 5px;
-    padding-bottom: 2em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 
@@ -36,8 +38,8 @@ body {
     background-image: url(images/image-header-mobile.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: hsl(277, 64%, 61%);
-    background-blend-mode: overlay;
+    background-color: hsla(277, 64%, 61%);
+    background-blend-mode: multiply;
     opacity: 0.8;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;

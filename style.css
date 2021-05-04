@@ -1,0 +1,181 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background: hsl(233, 47%, 7%);
+    font-size: 1.125rem;
+    font-family: 'lexend deca', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+
+    width: 90%;
+    max-width: 900px;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    padding-bottom: 2em;
+}
+
+
+
+.image-bg {
+    
+    width: 100%;
+    height: 319px;    
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: overlay;
+    opacity: 0.8;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+    
+}
+
+article {
+
+    margin: 2em;
+}
+
+
+.data-analysis {
+    text-transform: uppercase;
+}
+
+
+/*======Typography=====*/
+
+h2,
+h3,
+h4  {
+
+    color: #fff;
+    font-family: 'inter', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+h2 {
+
+    margin-bottom: 0.8em;
+    font-size: 2.1rem;
+}
+
+h3 {
+
+    margin-top: 1.5em;
+}
+
+span {
+
+    color:  hsl(277, 64%, 61%);
+}
+
+
+
+.attribution {
+
+    color:  hsl(277, 64%, 61%);
+    margin-bottom: 3em;
+
+}
+
+.attribution a {
+
+    text-decoration: none;
+    
+}
+
+.attribution a:hover {
+
+    text-decoration: underline;
+    color: #2cd;
+    
+}
+
+
+div p {
+
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+}
+
+
+/* =================
+Responsive ========== */
+
+@media (min-width: 767px) {
+
+    .container {
+
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+
+    article {
+
+        width: 45%;        
+        padding: 1em 2em .2em 0;        
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-bg {
+
+        background-image: url(images/image-header-desktop.jpg);
+        width: 50%;  
+        height: 355px;      
+        order: 1;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 5px;
+        
+    }
+
+
+    .data {
+
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+
+    p {
+
+        font-size: 0.9rem;
+        
+    }
+
+
+    .data-analysis {
+
+        margin-right: 2em;
+    }
+
+
+    
+}
